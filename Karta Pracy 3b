@@ -1,0 +1,59 @@
+#Zad.1
+print("wszystkie dni listopada")
+for i in range(1,31):
+      print(i)
+      
+#Zad.2
+a = int(input("Podaj Zakres"))
+for i in range(1,a+1):
+    if i % 2!=0:
+        print(i**2)
+        
+#Zad.3
+for i in range(1000,10000):
+    if i%379 == 0:
+        print(i)'
+        
+#Zad.4
+for i in range(100,1000):
+    if i%5==0 and i%6==0 and i%11==0:
+        print(i)
+Albo
+
+for i in range(100,1000):
+    if i%5==0:
+        print(i)
+for i in range(100,1000):
+    if i%6==0:
+        print(i)
+for i in range(100,1000):
+    if i%11==0:
+        print(i)
+        
+#Zad.5
+n = int(input("Ile liczb:"))
+suma = 0
+for i in range(n):
+    a = int(input("Podaj liczby:"))
+    suma = suma+a
+    print(suma)
+    
+# Zad.6
+k=int(input("podaj liczbe k:"))print("ZADANIE 7")
+ileLiczb = int(input("Podaj liczby: "))
+suma = 0
+for i in range(11,(ileLiczb*2)+11,+2):
+    suma += i
+print(f"Suma to: {suma}")
+
+
+BŁĄD
+ 
+#Zad.7
+BRAK
+#Zad.8
+BRAK
+#Zad.9
+BRAK
+#Zad.10
+BRAK
