@@ -39,12 +39,11 @@ for i in range(n):
     print(suma)
     
 # Zad.6
-k=int(input("podaj liczbe k:"))print("ZADANIE 7")
-ileLiczb = int(input("Podaj liczby: "))
-suma = 0
-for i in range(11,(ileLiczb*2)+11,+2):
-    suma += i
-print(f"Suma to: {suma}")
+k=int(input("podaj liczbe k:"))
+suma=0
+for i in range (k):
+    suma = k * 2
+    print("suma:",suma)
 
 
 BŁĄD
