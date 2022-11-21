@@ -13,6 +13,28 @@ print("liczba jest pierwsza")
 
 # 2. Generator liczb pierwszych - liczby pierwsze w przedziale [p, q]
 
+p, g=map(int,input().split())
+for i in range(p, g+1):
+    flaga = True
+    for j in range(2, int(i**0.5)+1):
+        if i % j == 0:
+            flaga = False
+            break
+    if flaga:
+        print(i, end=" ")
 
 
 # 3. Generator liczb pierwszych - początkowe k liczb pierwszych
+
+n = int(input())
+x=1
+while n > 0:
+    flaga = True
+    for i in range(2,x):
+        if x % i == 0:
+            flaga = False
+            break
+    if flaga:
+        print(x,end=" ")
+        n = n - 1
+    x = x + 1
