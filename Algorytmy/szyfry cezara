@@ -1,0 +1,10 @@
+!!WAZNE!!
+https://algorytm.edu.pl/wstp-do-c/ascii.html
+#Funkcja ord
+print(ord("a"))
+print(ord("B"))
+#Funkcja chr 
+print(chr(66))
+print(chr(97))
+#Połączenie calosci
+
