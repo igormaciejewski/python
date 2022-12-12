@@ -1,0 +1,9 @@
+//Z.1
+
+liczba = int(input())
+suma = 0
+while liczba > 0:
+    suma += liczba % 10
+    liczba = liczba // 10
+print(suma)
+
