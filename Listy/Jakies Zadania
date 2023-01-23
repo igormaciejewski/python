@@ -2,6 +2,27 @@ from random import randint
 L = [randint(1, 20) for i in range(20)]
 print(L)
 #Z.1
-print (max(L))
+print(max(L))
 #Z.2
-print (min(L))
+print(min(L))
+#Z.3
+print(L.count(max(L)))
+#Z.4
+print(L.count(min(L)))
+#Z.5
+print(max(L)-min(L))
+#Z.6
+print(sum(L))
+#Z.7
+print(sum(L)/len(L))
+#Z.8
+x = 0
+for i in L:
+    if i % 2 == 0:
+        x += 1
+    else:
+        x -= 1
+if x > 0:
+    print("parzy")
+else:
+    print("nie parzy")
