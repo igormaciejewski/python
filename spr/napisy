@@ -61,3 +61,12 @@ for i in N:
     if ilosc > 0:
         x = x - ilosc * i
         print(f"{i} razy {ilosc}")
+        
+        
+CEZAR
+CEZAR #Zaszyfruj napis cezarem w kluczu = 3 
+napis = input()
+szyfr = ""
+for i in range(len(napis)):
+  szyfr += chr( 65 + (ord(napis[i])- 65 + 3) % 26)
+print(f"Napis: {napis} Szyfr: {szyfr}")
