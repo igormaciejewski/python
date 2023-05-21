@@ -1,0 +1,44 @@
+#Z.1
+
+suma = 0
+for i in range(100,1000):
+    suma += i
+print(suma)
+
+#Z.2
+
+suma = 0
+counter = 0
+for i in range(10,100):
+    if i % 6 == 0:
+        suma+=i
+        counter+=1
+print(suma)
+print(counter)
+
+#Z.3
+
+import random
+
+n = 5  # Liczba wylosowanych liczb
+max_liczba = 0  # Zmienna przechowująca aktualnie największą liczbę
+
+for _ in range(n):
+    liczba = random.randint(1000, 9999)  # Wylosowanie czterocyfrowej liczby
+    print(liczba)  # Wypisanie wylosowanej liczby
+
+    if liczba > max_liczba:
+        max_liczba = liczba
+
+print("Największa liczba to:", max_liczba)
+
+#Z.4
+
+liczba = 345
+suma_cyfr = 0
+
+while liczba > 0:
+    suma_cyfr += liczba % 10
+    liczba //= 10
+
+print("Suma cyfr liczby wynosi:", suma_cyfr)
