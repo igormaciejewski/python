@@ -125,3 +125,46 @@ while a != b:
         b = b - a
 nwd = a
 print(iloczyn // nwd)
+
+NAPISY
+
+Z.1
+
+napis = input()
+couter = 0
+for i in range(len(napis)):
+    if napis[i] == "c":
+        couter += 1
+print(couter)
+
+Z.2
+
+napis = input("Podaj napis: ")
+
+czy_nie_rosnace = True
+
+for i in range(len(napis) - 1):
+    if napis[i] < napis[i + 1]:
+        czy_nie_rosnace = False
+        break
+
+if czy_nie_rosnace:
+    print("Litery w napisie są w porządku nierosnącym.")
+else:
+    print("Litery w napisie nie są w porządku nierosnącym.")
+    
+Z.3
+
+napis1 = input("Podaj pierwszy napis: ")
+napis2 = input("Podaj drugi napis: ")
+napis3 = input("Podaj trzeci napis: ")
+
+najdluzszy_napis = napis1
+
+if len(napis2) > len(najdluzszy_napis):
+    najdluzszy_napis = napis2
+
+if len(napis3) > len(najdluzszy_napis):
+    najdluzszy_napis = napis3
+
+print("Najdłuższy napis:", najdluzszy_napis)
