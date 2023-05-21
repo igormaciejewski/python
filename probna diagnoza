@@ -42,3 +42,46 @@ while liczba > 0:
     liczba //= 10
 
 print("Suma cyfr liczby wynosi:", suma_cyfr)
+
+Z.5
+
+liczba = int(input())
+trzy = liczba // 100
+dwu = liczba // 10 % 10
+jedno = liczba % 10
+
+if trzy < jedno and trzy < dwu:
+    print(trzy)
+elif dwu < jedno and dwu < trzy:
+    print(dwu)
+elif jedno < trzy and jedno < dwu:
+    print(jedno)
+
+ALGORYTMY
+
+Z.1
+
+liczba = int(input())
+for i in range (2,liczba):
+    if liczba % i == 0:
+        exit("nie jest pierwsza")
+    exit("jest pierwsza")
+    
+Z.2
+
+liczba = int(input())
+for i in range (2,liczba):
+    if liczba % i == 0:
+        exit("jest zlozona")
+    exit("nie jest zlozona")
+
+Z.3
+
+liczba = int(input())
+for i in range (2,liczba):
+    if liczba % 24 == 0:
+        exit("nie jest wzgeldnie pierwsza z 24")
+    exit("jest wzglednie pierwsza z 24")
+
+Z.4
+
