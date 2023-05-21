@@ -115,3 +115,13 @@ print("Suma ułamków:", suma_ułamków)
 
 Z.6
 
+a = int(input())
+b = int(input())
+iloczyn = a * b
+while a != b:
+    if a > b:
+        a = a - b
+    else:
+        b = b - a
+nwd = a
+print(iloczyn // nwd)
