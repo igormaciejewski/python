@@ -85,3 +85,13 @@ for i in range (2,liczba):
 
 Z.4
 
+s = input("Podaj napis do zaszyfrowania: ")
+k = int(input("Podaj klucz szyfru Cezara: "))
+
+zaszyfrowany_napis = ""
+
+for znak in s:
+    zaszyfrowany_znak = chr((ord(znak) - 97 + s) % 26 + 97)
+    zaszyfrowany_napis += zaszyfrowany_znak
+
+print("Zaszyfrowany napis:", zaszyfrowany_napis)
