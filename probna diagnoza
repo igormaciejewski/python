@@ -95,3 +95,23 @@ for znak in s:
     zaszyfrowany_napis += zaszyfrowany_znak
 
 print("Zaszyfrowany napis:", zaszyfrowany_napis)
+
+Z.5
+
+from fractions import Fraction
+
+licznik1 = int(input("Podaj licznik pierwszego ułamka: "))
+mianownik1 = int(input("Podaj mianownik pierwszego ułamka: "))
+
+licznik2 = int(input("Podaj licznik drugiego ułamka: "))
+mianownik2 = int(input("Podaj mianownik drugiego ułamka: "))
+
+ułamek1 = Fraction(licznik1, mianownik1)
+ułamek2 = Fraction(licznik2, mianownik2)
+
+suma_ułamków = ułamek1 + ułamek2
+
+print("Suma ułamków:", suma_ułamków)
+
+Z.6
+
